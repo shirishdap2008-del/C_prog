@@ -1,0 +1,47 @@
+include<stdio.h>
+int main()
+{
+int a;
+printf("1.ADD");
+printf("\n2.SUB");
+printf("\n3.MULTIPLY");
+printf("\n4.DIVISION");
+printf("\nenter a:");
+do
+{
+if(a==1)
+{
+int a,b;
+printf("enter a,b:");
+scanf("%d %d",&a,&b);
+printf("ADD IS %d",a+b);
+}
+else if(a==2)
+int a,b;
+printf("enter a,b:");
+scanf("%d %d",&a,&b);
+printf("SUB IS %d",a-b);
+}
+else if(a==3)
+{
+int a,b;
+printf("enter a,b:");
+scanf("%d %d",&a,&b);
+printf("MULTIPLY IS %d",a*b);
+}
+else if(a==4)
+{
+int a,b;
+printf("enter a,b:");
+scanf("%d %d",&a,&b);
+printf("DIVISION IS %d",a/b);
+}
+else
+{
+printf("invalid choice");
+}
+}while(a>=1 && a<=4);
+return 0;
+}
+
+
