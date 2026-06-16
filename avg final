@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+char a;
+int d,r,b;
+do
+{
+printf("enter s or n:");
+scanf("%c",&a);
+printf("no.of num to be taken:");
+scanf("%d",&d);
+if(a=='s')
+{
+    for(int i=1;i<=d;i++)
+    {
+printf("\nenter num:");
+scanf("%d",&b);
+r+=b;
+b=0;
+    }
+}
+else
+{
+break;
+}
+}while(a!='s');
+printf("\n-------AVG NUM IS-------\n");
+printf("%d",r/d);
+return 0;
+}
