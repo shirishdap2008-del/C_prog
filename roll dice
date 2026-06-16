@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+  do
+  {
+    printf("enter value after rolling:");
+    scanf("%d",&a);
+    if(a==1)
+      {
+      continue;
+      }
+    else if(a==2)
+      {
+      continue;
+      }
+    else if(a==3)
+      {
+      continue;
+      }
+    else if(a==4)
+      {
+      continue;
+      }
+    else if(a==5)
+      {
+      continue;
+      }
+    else if(a==6)
+      {
+      printf("6 has been obtained");
+      }
+    else
+      {
+        printf("wrong number");
+      }
+    }while(a!=6);
+return 0;
+}
