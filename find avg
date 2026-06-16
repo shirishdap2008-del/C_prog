@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+char a;
+do
+{
+printf("enter s or n:");
+scanf("%c",&a);
+if(a=='s')
+{
+int c,r,b;
+printf("enter num:");
+scanf("%d",&b);
+c++;
+r+=b;
+b=0;
+}
+else
+{
+break;
+}
+}while(a!='s');
+printf("-------AVG NUM IS-------");
+printf("%d",r/c);
+return 0;
+}
+
+
+
