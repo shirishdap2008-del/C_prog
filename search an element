@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+int n;
+printf("enter array size:");
+scanf("%d",&n);
+int a[n];
+printf("enter array:");
+for(int i=0;i<n;i++)
+{
+scanf("%d",&a[n]);
+}
+char c[10];
+do
+{
+int b;
+printf("search for number:");
+scanf("%d",&a);
+printf("enter yes or no:");
+scanf("%s",&c[10]);
+for(int i=0;i<n;i++)
+{
+if(a[i+1]==b)
+{
+printf("%d exists in array",b);
+}
+else
+{
+printf("invalid number");
+}
+}
+}while(c[10]=='yes');
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
