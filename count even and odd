@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+int n;
+printf("enter array size:");
+scanf("%d",&n);
+int a[n];
+int c,r;
+printf("enter array:");
+for(int i=0;i<n;i++)
+{
+scanf("%d",&a[n]);
+}
+for(int i=0;i<n;i++)
+{
+
+if(a[i+1]%2==0)
+{
+c++;
+printf("%d is an even number\n");
+}
+else
+{
+r++;
+printf("%d is an odd number\n");
+}
+}
+printf("total even numbers are %d\n",c);
+printf("total odd numbers are %d\n",r);
+return 0;
+}
+
+
+
