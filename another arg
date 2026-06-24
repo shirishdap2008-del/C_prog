@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+char* even_odd(int a)
+ {
+     if(a%2==0)
+     {
+
+        return "even";
+     }
+     else
+     {
+
+         return "odd";
+     }
+
+ }
+int main()
+{
+    /*
+   based on arg and return  have 4 types
+   1.without arg without return
+   2.without arg with return
+   3.with arg without return
+   4.with arg with return
+    */
+    int a;
+    printf("Enter a num");
+    scanf("%d",&a);
+    printf("%s",even_odd(a));
+    return 0;
+}
