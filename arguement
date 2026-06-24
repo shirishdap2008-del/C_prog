@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+int add(int a,int b)//parameter
+{
+     printf("\nhello");
+
+    return a+b;
+
+}
+
+int main()
+{
+   /*
+   function
+   datatype function_name()
+   {
+   block of code
+   }
+   function_name();
+   */
+int a,b;
+printf("enter a,b values");
+scanf("%d%d",&a,&b);
++
+int s=add(a,b);
+printf("%d",s);
+    return 0;
+}
