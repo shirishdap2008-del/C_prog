@@ -1,0 +1,248 @@
+#include<stdio.h>
+struct student
+{
+char name[50];
+int rollno;
+float marks;
+};
+    int main()
+{
+int b;
+printf("enter no.of students:\n");
+scanf("%d",&b);
+struct student a;
+for(int i=1;i<=b;i++)
+{
+printf("enter student name:");
+scanf("\n");
+scanf("%[^\n]",&a.name);
+printf("enter student roll.no:\n");
+scanf("%d",&a.rollno);
+printf("enter student mark:\n");
+scanf("%f",&a.marks);
+}
+for(int i=1;i<=b;i++)
+{
+printf("%s %d %.2f",a.name,a.rollno,a.marks);
+}
+return 0;
+
+
+
+
+
+#include<stdio.h>
+struct emp
+{
+char name[50];
+int id;
+float salary;
+};
+    int main()
+{
+int b;
+printf("enter no.of employees:\n");
+scanf("%d",&b);
+struct emp a;
+for(int i=1;i<=b;i++)
+{
+printf("enter emp name:");
+scanf("\n");
+scanf("%[^\n]",&a.name);
+printf("enter emp id:\n");
+scanf("%d",&a.id);
+printf("enter emp salary:\n");
+scanf("%f",&a.salary);
+}
+for(int i=1;i<=b;i++)
+{
+printf("%s %d %.2f",a.name,a.id,a.salary);
+}
+return 0;
+}
+
+
+
+
+
+
+
+#include<stdio.h>
+struct book
+{
+char name[50];
+char auname[50];
+float price;
+};
+    int main()
+{
+int b;
+printf("enter no.of books:\n");
+scanf("%d",&b);
+struct books a;
+for(int i=1;i<=b;i++)
+{
+printf("enter book name:");
+scanf("\n");
+scanf("%[^\n]",&a.name);
+printf("enter author name:\n");
+scanf("%[^\n]",&a.auname);
+printf("enter book price:\n");
+scanf("%f",&a.price);
+}
+for(int i=1;i<=b;i++)
+{
+printf("%s %s %.2f",a.name,a.auname,a.marks);
+}
+return 0;
+}
+
+
+
+
+#include<stdio.h>
+struct product
+{
+char name[50];
+int id;
+int quantity;
+float price;
+};
+    int main()
+{
+int b;
+printf("enter no.of products:\n");
+scanf("%d",&b);
+struct product a;
+for(int i=1;i<=b;i++)
+{
+printf("enter product name:");
+scanf("\n");
+scanf("%[^\n]",&a.name);
+printf("enter product id:\n");
+scanf("%d",&a.id);
+printf("enter no.of quantities:");
+scanf("%d",&a.quantity);
+printf("enter product price:\n");
+scanf("%f",&a.price);
+}
+for(int i=1;i<=b;i++)
+{
+printf("%s %d %d %.2f",a.name,a.id,a.quantity,a.salary);
+printf("the total cost of each product is:%d",a.price*a.quantity);
+}
+return 0;
+}
+
+
+
+
+
+
+#include<stdio.h>
+struct student
+{
+char name[50];
+float marks;
+};
+int main()
+{
+struct student a;
+printf("enter student name:");
+scanf("\n");
+scanf("%[^\n]",&a.name);
+printf("enter student mark:\n");
+scanf("%f",&a.marks);
+struct student a1;
+printf("enter student name:");
+scanf("\n");
+scanf("%[^\n]",&a1.name);
+printf("enter student mark:\n");
+scanf("%f",&a1.marks);
+if(a1.marks>a.marks)
+{
+printf("%s is greatest:%.2f",a1.name,a1.marks);
+}
+else
+{
+printf("%s is greatest:%.2f",a.name,a.marks);
+}
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+struct product
+{
+char name[50];
+int id;
+char status[50];
+};
+    int main()
+{
+int b;
+printf("enter no.of books:\n");
+scanf("%d",&b);
+struct product a;
+for(int i=1;i<=b;i++)
+{
+printf("enter book name:");
+scanf("\n");
+scanf("%[^\n]",&a.name);
+printf("enter book id:\n");
+scanf("%d",&a.id);
+printf("enter status:\n");
+scanf("\n");
+scanf("%[^\n]",&a.status);
+}
+for(int i=1;i<=b;i++)
+{
+if(a.status=="issued")
+{
+printf("%s book issued",a.name);
+}
+else if(a.status=="returned")
+{
+printf("%s book is returned",a.name);
+}
+}
+for(int i=1;i<=b;i++)
+{
+if(a.status!="issued")
+{
+printf("%s book is available",a.name);
+}
+}
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
